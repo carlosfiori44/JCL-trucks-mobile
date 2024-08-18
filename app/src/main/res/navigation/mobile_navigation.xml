@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_historico">
+
+    <fragment
+        android:id="@+id/navigation_historico"
+        android:name="com.example.jcltrucks.ui.HistoricoFuncionario.HistoricoFragment"
+        android:label="@string/title_historico"
+        tools:layout="@layout/fragment_historicofuncionario" />
+
+    <fragment
+        android:id="@+id/navigation_lembretes"
+        android:name="com.example.jcltrucks.ui.LembretesFuncionarios.LembretesFragment"
+        android:label="@string/title_lembretes"
+        tools:layout="@layout/fragment_lembretesfuncionario" />
+
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.example.jcltrucks.ui.PerfilFuncionario.PerfilFuncionarioFragment"
+        android:label="@string/title_perfil"
+        tools:layout="@layout/fragment_perfilfuncionario" />
+</navigation>
